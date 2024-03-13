@@ -1,7 +1,3 @@
-.m-auto {
-  margin: 0 auto;
-}
-
 @mixin render-indents($px) {
   @include render-indents-interval($px, $px + 1);
 }
@@ -9,70 +5,70 @@
 @mixin render-indents-interval($px-from, $px-to) {
   @for $i from $px-from to $px-to {
     .mt-#{$i} {
-      margin-top: $i;
+      margin-top: #{$i}px;
     }
 
     .ml-#{$i} {
-      margin-left: $i;
+      margin-left: #{$i}px;
     }
 
     .mr-#{$i} {
-      margin-right: $i;
+      margin-right: #{$i}px;
     }
 
     .mb-#{$i} {
-      margin-bottom: $i;
+      margin-bottom: #{$i}px;
     }
 
     .m-#{$i} {
-      margin: $i;
+      margin: #{$i}px;
     }
 
     .mv-#{$i} {
       margin: {
-        top: $i;
-        bottom: $i;
+        top: #{$i}px;
+        bottom: #{$i}px;
       }
     }
 
     .mh-#{$i} {
       margin: {
-        left: $i;
-        right: $i;
+        left: #{$i}px;
+        right: #{$i}px;
       }
     }
 
     .pt-#{$i} {
-      padding-top: $i;
+      padding-top: #{$i}px;
     }
 
     .pl-#{$i} {
-      padding-left: $i;
+      padding-left: #{$i}px;
     }
 
     .pr-#{$i} {
-      padding-right: $i;
+      padding-right: #{$i}px;
     }
 
     .pb-#{$i} {
-      padding-bottom: $i;
+      padding-bottom: #{$i}px;
     }
 
     .p-#{$i} {
-      padding: $i;
+      padding: #{$i}px;
     }
 
     .pv-#{$i} {
       padding: {
-        top: $i;
-        bottom: $i;
+        top: #{$i}px;
+        bottom: #{$i}px;
       }
     }
 
     .ph-#{$i} {
       padding: {
-        left: $i;
-        right: $i;
+        left: #{$i}px;
+        right: #{$i}px;
       }
     }
   }

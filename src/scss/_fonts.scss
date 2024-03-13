@@ -1,0 +1,82 @@
+@use './colors' as palette;
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@mixin font-common {
+  font-family: 'Poppins', sans-serif;
+  color: palette.$primary;
+}
+
+.h1 {
+  @include font-common;
+
+  font-size: 72px;
+  line-height: 80px;
+  font-weight: 700;
+}
+
+.h2 {
+  @include font-common;
+
+  font-size: 64px;
+  line-height: 72px;
+  font-weight: 700;
+}
+
+.h3 {
+  @include font-common;
+
+  font-size: 56px;
+  line-height: 64px;
+  font-weight: 700;
+}
+
+.h4 {
+  @include font-common;
+
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.h5 {
+  @include font-common;
+
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+}
+
+.h6 {
+  @include font-common;
+
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.text-link {
+  @include font-common;
+
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.text-plain {
+  @include font-common;
+
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.color-secondary {
+  color: palette.$secondary;
+}
+
+.color-white {
+  color: palette.$white;
+}

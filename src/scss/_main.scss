@@ -1,3 +1,82 @@
-html {
-  font-family: Arial, Helvetica, sans-serif;
+@use 'sass:math';
+@use './colors' as palette;
+@import './common/indents';
+
+@include render-indents(8);
+@include render-indents(16);
+@include render-indents(20);
+@include render-indents(24);
+@include render-indents(32);
+@include render-indents(40);
+@include render-indents(80);
+@include render-indents(100);
+@include render-indents(116);
+@include render-indents(232);
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 32px 0;
+}
+
+.img-cortez-weekly-update {
+  width: 1204px;
+  height: auto;
+  outline: solid 16px palette.$primary;
+  border-radius: 32px;
+}
+
+.person-card {
+  width: 392px;
+  height: auto;
+  border-radius: 32px;
+}
+
+.metrics-item {
+  width: 213px;
+}
+
+.to-marketplace {
+  width: 295px;
+}
+
+.btn-to-marketplace {
+  padding: 0;
+  width: 64px;
+  height: 64px;
+}
+
+.why-become-creator-description,
+.why-become-creator-items {
+  width: calc(50% - 15px);
+}
+
+.why-become-creator-items {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+}
+
+.engage-card {
+  border-radius: 32px;
+  background-color: palette.$primary;
+  padding: 116px 0;
+}
+
+.footer-col {
+  width: 180px;
+}
+
+.background-rectangle {
+  position: absolute;
+  left: 0;
+  top: 32px + 52px + 32px + 116px + 240px + 116px + math.div(676px, 2);
+  background-color: palette.$primary;
+  width: 100%;
+  height: math.div(676px, 2) + 116px + 144px + 116px + 522px + 116px + 128px + 116px;
+  z-index: -1;
 }

@@ -1,6 +1,3 @@
-@import "./indents";
-@import "./font-size";
-
 .display-flex {
   display: flex;
 }
@@ -12,6 +9,8 @@
 .display-inline-block {
   display: inline-block;
 }
+
+// flex
 
 .justify-center {
   justify-content: center;
@@ -25,9 +24,27 @@
   justify-content: space-between;
 }
 
-.align-center {
+.align-items-center {
   align-items: center;
 }
+
+.align-items-start {
+  align-items: flex-start;
+}
+
+.align-items-end {
+  align-items: flex-end;
+}
+
+.flex-dir-column {
+  flex-direction: column;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+// text alignment
 
 .text-left {
   text-align: left;
@@ -41,10 +58,10 @@
   text-align: right;
 }
 
-.uppercase {
-  text-transform: uppercase;
+.relative {
+  position: relative;
 }
 
-.font-weight-100 {
-  font-weight: 100;
+.uppercase {
+  text-transform: uppercase;
 }

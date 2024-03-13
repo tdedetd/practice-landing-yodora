@@ -1,0 +1,22 @@
+@use './colors' as palette;
+
+.btn {
+  padding: 16px 32px;
+  border-radius: 100px;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-primary {
+  color: palette.$white;
+  background-color: palette.$primary;
+}
+
+.btn-secondary {
+  color: palette.$primary;
+  background-color: palette.$secondary;
+}
